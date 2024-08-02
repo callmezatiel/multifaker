@@ -1,6 +1,6 @@
 # Multifaker 
 
-DNS change script
+DNS Change Script
 
 # Requirements
 - Kali Linux / Parrot Security OS
