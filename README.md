@@ -8,20 +8,20 @@ DNS Change Script
 # Installation
 
 ```
-#Enter In Super User
-- sudo su
+# Enter In Super User
+sudo su
 
-#Clone Repository
-- git clone http://github.com/callmezatiel/multifaker
+# Clone Repository
+git clone http://github.com/callmezatiel/multifaker
 
-#Enter the container folder
-- cd multifaker
+# Enter the container folder
+cd multifaker
 
-#Add execute permissions
-- chmod +x multifaker.sh
+# Add execute permissions
+chmod +x multifaker.sh
 
-#Add the script to the binaries for use by the system
-- sudo mv multifaker.sh /bin 
+# Add the script to the binaries for use by the system
+sudo mv multifaker.sh /bin 
 
 ```
 # Run
