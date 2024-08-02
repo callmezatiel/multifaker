@@ -12,7 +12,7 @@ DNS Change Script
 - git clone http://github.com/callmezatiel/multifaker
 - cd multifaker
 - chmod +x multifaker.sh
-- sudo mv multifaker.sh /usr/bin 
+- sudo mv multifaker.sh /bin 
 
 ```
 # Run
