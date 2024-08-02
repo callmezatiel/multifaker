@@ -14,16 +14,17 @@ sudo su
 # Clone Repository
 git clone http://github.com/callmezatiel/multifaker
 
-# Enter the container folder
+# Enter The Container Folder
 cd multifaker
 
-# Add execute permissions
+# Add Execute Permissions
 chmod +x multifaker.sh
 
-# Add the script to the binaries for use by the system
+# Add The Script To The Binaries For Use By The System
 sudo mv multifaker.sh /bin 
 
 ```
+
 # Run
 
 ## Open New Terminal and type:
