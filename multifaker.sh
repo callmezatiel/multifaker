@@ -30,15 +30,15 @@ echo "[+] Backup created at $backup_file"
 # 2. Install necessary package if not installed
 if ! command -v resolvconf &> /dev/null; then
     echo "[+] Installing resolvconf..."
-if [ -f /usr/bin/apt ]; then
-    apt install resolvconf -y
-fi
-if [ -f /usr/bin/dnf ]; then
-    dnf install resolvconf -y
-fi
-if [ -f /usr/bin/pacman ]; then
-    pacman -Sy resolvconf -noconfirm 
-fi
+	if [ -f /usr/bin/apt ]; then
+    	apt install resolvconf -y
+	fi
+	if [ -f /usr/bin/dnf ]; then
+    	dnf install resolvconf -y
+	fi
+	if [ -f /usr/bin/pacman ]; then
+    	pacman -Sy resolvconf -noconfirm 
+	fi
 fi
 
 # 3. Enable and start the service
@@ -132,7 +132,7 @@ echo -e "\n[✓] DNS configuration completed successfully."
 }
 # check if user its root
 if [[ $EUID -eq 0 ]]; then
-main
+    main
 else
-echo "[!] You must run as root!"
+    echo "[!] You must run as root!"
 fi
