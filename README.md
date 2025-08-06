@@ -26,7 +26,10 @@ DNS Change Script
 
 ## Requirements
 - Kali Linux / Parrot Security OS
- 
+
+apt install resolvconf -y
+systemctl enable resolvconf.service
+systemctl start resolvconf.service
 
 ## How Each Feature Works
 
