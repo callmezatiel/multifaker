@@ -49,8 +49,16 @@ DNS Change Script
 # Enter In Super User
 sudo su
 
-# Intall resolvconf
+# Install resolvconf/openresolv
+
+# For Ubuntu/Debian
 apt install resolvconf -y
+
+# For Fedora
+dnf install openresolv -y
+
+# For Arch
+pacman -Sy openresolv -noconfirm
 
 # Enable resolvconf at the startup
 systemctl enable resolvconf.service
