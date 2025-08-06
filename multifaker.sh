@@ -34,10 +34,10 @@ if [ -f /usr/bin/apt ]; then
     apt install resolvconf -y
 fi
 if [ -f /usr/bin/dnf ]; then
-    dnf install resolvconf -y
+    dnf install openresolv -y
 fi
 if [ -f /usr/bin/pacman ]; then
-    pacman -Sy resolvconf -noconfirm 
+    pacman -Sy openresolv -noconfirm 
 fi
 fi
 
