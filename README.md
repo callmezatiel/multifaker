@@ -79,3 +79,5 @@ sudo mv multifaker.sh /bin
 ```
 sudo multifaker.sh
 ```
+
+[![multifaker.png](https://i.postimg.cc/B6KZPQwg/multifaker.png)](https://postimg.cc/phPMgxvh)
