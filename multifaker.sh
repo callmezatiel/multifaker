@@ -21,6 +21,7 @@ banner
 
 set -e  # Exit on any error
 
+main() {
 # 1. Backup original DNS configuration
 backup_file="/etc/resolvconf/resolv.conf.d/head.backup.$(date +%s)"
 cp /etc/resolvconf/resolv.conf.d/head "$backup_file"
@@ -29,7 +30,15 @@ echo "[+] Backup created at $backup_file"
 # 2. Install necessary package if not installed
 if ! command -v resolvconf &> /dev/null; then
     echo "[+] Installing resolvconf..."
+if [ -f /usr/bin/apt ]; then
     apt install resolvconf -y
+fi
+if [ -f /usr/bin/dnf ]; then
+    dnf install resolvconf -y
+fi
+if [ -f /usr/bin/pacman ]; then
+    pacman -Sy resolvconf -noconfirm 
+fi
 fi
 
 # 3. Enable and start the service
@@ -120,3 +129,10 @@ cat /etc/resolvconf/resolv.conf.d/head >> "$log_file"
 echo "[+] DNS changes logged at $log_file"
 
 echo -e "\n[✓] DNS configuration completed successfully."
+}
+# check if user its root
+if [[ $EUID -eq 0 ]]; then
+main
+else
+echo "[!] You must run as root!"
+fi
