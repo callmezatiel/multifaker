@@ -27,10 +27,6 @@ DNS Change Script
 ## Requirements
 - Kali Linux / Parrot Security OS
 
-apt install resolvconf -y
-systemctl enable resolvconf.service
-systemctl start resolvconf.service
-
 ## How Each Feature Works
 
 
@@ -52,6 +48,15 @@ systemctl start resolvconf.service
 ```
 # Enter In Super User
 sudo su
+
+# Intall resolvconf
+apt install resolvconf -y
+
+# Enable resolvconf at the startup
+systemctl enable resolvconf.service
+
+# Start resolvconf
+systemctl start resolvconf.service
 
 # Clone Repository
 git clone http://github.com/callmezatiel/multifaker
