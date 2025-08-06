@@ -4,6 +4,21 @@
 # Author: Zatiel
 # Purpose: Ethical use in controlled environments only
 
+# banner
+banner() {
+
+printf "\e[1;94m     ███╗   ███╗██╗   ██╗██╗  ████████╗██╗███████╗ █████╗ ██╗  ██╗███████╗██████╗      \e[0m\n"
+printf "\e[1;94m     ████╗ ████║██║   ██║██║  ╚══██╔══╝██║██╔════╝██╔══██╗██║ ██╔╝██╔════╝██╔══██╗      \e[0m\n"
+printf "\e[1;94m     ██╔████╔██║██║   ██║██║     ██║   ██║█████╗  ███████║█████╔╝ █████╗  ██████╔╝      \e[0m\n"
+printf "\e[1;94m     ██║╚██╔╝██║██║   ██║██║     ██║   ██║██╔══╝  ██╔══██║██╔═██╗ ██╔══╝  ██╔══██╗      \e[0m\n"
+printf "\e[1;94m     ██║ ╚═╝ ██║╚██████╔╝███████╗██║   ██║██║     ██║  ██║██║  ██╗███████╗██║  ██║      \e[0m\n"
+printf "\e[1;94m     ╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝     \e[0m\n"
+printf "\e[1;77m\e[45m   :: Kali DNS Tool :: github.com/callmezatiel  \e[0m\n"
+    printf "\n"
+}
+banner
+                                                                             
+
 set -e  # Exit on any error
 
 # 1. Backup original DNS configuration
